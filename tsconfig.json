@@ -1,0 +1,10 @@
+{
+  "extends": "@viclafouch/eslint-config-viclafouch/tsconfig.json",
+  "include": [
+    "./packages/**/next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "./packages/**/.next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules", "./packages/**/node_modules", "./packages/**/postcss.config.js"]
+}

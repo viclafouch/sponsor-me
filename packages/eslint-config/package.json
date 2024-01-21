@@ -1,0 +1,9 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "@viclafouch/eslint-config-viclafouch": "^4.5.0"
+  }
+}
