@@ -4,13 +4,20 @@ export type FaqProps = {
   productName: string
   amountInEuros: number
   sponsorLink: string
+  forNumberOfOrders: number
   faq: {
     question: string
     answer: React.ReactNode
   }[]
 }
 
-const Faq = ({ faq, productName, amountInEuros, sponsorLink }: FaqProps) => {
+const Faq = ({
+  faq,
+  productName,
+  amountInEuros,
+  sponsorLink,
+  forNumberOfOrders
+}: FaqProps) => {
   return (
     <div className="ui-flex ui-flex-col ui-items-center ui-gap-y-6">
       <header>
@@ -19,7 +26,12 @@ const Faq = ({ faq, productName, amountInEuros, sponsorLink }: FaqProps) => {
         </h2>
         <p className="ui-mt-5 ui-mb-5">
           Obtenez{' '}
-          <b>{amountInEuros}€ de réduction sur votre première commande</b>{' '}
+          <b>
+            {amountInEuros}€ de réduction sur{' '}
+            {forNumberOfOrders > 1
+              ? `vos ${forNumberOfOrders} premières commande`
+              : 'votre première commande'}
+          </b>{' '}
           {productName} avec le lien de parrainage suivant :{' '}
           <a
             title={`Aller sur ${productName}`}

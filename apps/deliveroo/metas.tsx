@@ -2,28 +2,28 @@ import type { Metadata, Viewport } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
-export const SPONSOR_LINK: string = 'https://www.frichtimarket.com/r/NDQyMDE5'
+export const SPONSOR_LINK: string = 'https://roo.it/victordlf8136'
 
 // Amount in euros users will earn for their first delivery
 export const AMOUNT_IN_EUROS: number = 10
 
 // The minimum of order required from the user
-export const MINIMUM_AMOUNT_IN_EUROS_TO_USE: number = 10
+export const MINIMUM_AMOUNT_IN_EUROS_TO_USE: number = 0
 
 // For the n first orders, user can benefit from the discount
-export const FOR_NUMBER_OF_COMMANDS: number = 2
+export const FOR_NUMBER_OF_COMMANDS: number = 4
 
 // The name of the company
-export const COMPANY_NAME: string = 'New Frichti SAS'
+export const COMPANY_NAME: string = 'Deliveroo'
 
 // The name of the product
-export const PRODUCT_NAME: string = 'Frichti Market'
+export const PRODUCT_NAME: string = 'Deliveroo'
 
 export const CURRENT_YEAR: number = new Date().getFullYear()
 
 // Domain of the new sponsor website
 export const METADATA_BASE: Metadata['metadataBase'] = new URL(
-  'https://www.frichti-market-code-promo.fr'
+  'https://www.deliveroo-promo-code.com'
 )
 
 // The CSS url of the main background (don't forget to update the file in public folder)
@@ -33,24 +33,24 @@ export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
 export const TITLE: string = `Code promo de ${AMOUNT_IN_EUROS}€ offert sur ${PRODUCT_NAME} en ${CURRENT_YEAR}`
 
 // The homepage meta description
-export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite dès 50€ d'achat · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
+export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite avec Deliveroo Plus · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
 
 // Google Analytics ID
 export const GA_ID: string = 'G-GJGLYTKB81'
 
 // Theme color
-export const THEME_COLOR: Viewport['themeColor'] = '#faf190'
+export const THEME_COLOR: Viewport['themeColor'] = '#00ccbc'
 
 // Link to Android product application
 export const ANDROID_APP_LINK: string =
-  'https://play.google.com/store/apps/details?id=com.deleev.babat&hl=fr'
+  'https://deliveroo.fr/app/?platform=ios&home_page=true&home_page_variant=homepage_variant_a&mobile_banner=false'
 
 // Link to Apple product application
 export const APPLE_APP_LINK: string =
-  'https://itunes.apple.com/fr/app/id6449497817?mt=8'
+  'https://deliveroo.fr/app/?platform=ios&home_page=true&home_page_variant=homepage_variant_a&mobile_banner=false'
 
 // Link to Desktop product
-export const DESKTOP_LINK: string = 'https://www.frichtimarket.com'
+export const DESKTOP_LINK: string = 'https://deliveroo.com'
 
 // Questions and answers for SEO
 export const FAQ: FaqProps['faq'] = [
@@ -87,20 +87,22 @@ export const FAQ: FaqProps['faq'] = [
   },
   {
     question: 'Combien dois-je dépenser pour utiliser la promotion ?',
-    answer: `Selon la remise, le montant minimum de commande est de ${MINIMUM_AMOUNT_IN_EUROS_TO_USE}€.`
+    answer: MINIMUM_AMOUNT_IN_EUROS_TO_USE
+      ? `Selon la remise, le montant minimum de commande est de ${MINIMUM_AMOUNT_IN_EUROS_TO_USE}€.`
+      : 'Aucun minimum de commande est requis pour utiliser la remise.'
   },
   {
     question: `Où ${PRODUCT_NAME} livre ?`,
-    answer: `${PRODUCT_NAME} livre en Île-de-France.`
+    answer: `Aujourd'hui, ${PRODUCT_NAME} travaille en partenariat avec 158 000 restaurateurs, répartis dans dix pays, à savoir : Belgique, France, Hong Kong, Italie, Irlande, Qatar, Singapour, Émirats arabes unis, Koweït et Royaume-Uni.`
   },
   {
     question: `Quelles sont les heures d'ouverture de ${PRODUCT_NAME} ?`,
-    answer: 'Livraison en 1h30 en moyenne, 7j/7 de 8h à 23h.'
+    answer: `Les livreurs partenaires sont disponibles du matin jusqu'à tard dans la nuit, et les restaurants offrent des horaires d'ouverture variés.`
   },
   {
     question: `Quels sont les frais de livraison sur ${PRODUCT_NAME} ?`,
     answer:
-      "Les frais de livraison sont d'environ 1.99€ par commande. Ils deviennent gratuit après 50€ d'achat."
+      "Le montant de commande minimum varie en fonction du restaurant sélectionné. En cas d'exigence de montant minimum, une notification vous sera présentée avant la validation de votre commande."
   },
   {
     question: `En savoir plus sur ${PRODUCT_NAME}`,

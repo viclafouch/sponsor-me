@@ -5,7 +5,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        main: '#faf190',
+        main: '#00ccbc',
+        yellow: '#faf190',
         blue: '#1336b9',
         bluelight: '#15c'
       }
