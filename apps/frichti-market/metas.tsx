@@ -1,28 +1,39 @@
 import type { Metadata, Viewport } from 'next'
 import type { FaqProps } from '@repo/ui'
 
+// The sponsor link that users will use
 export const SPONSOR_LINK: string = 'https://www.frichtimarket.com/r/NDQyMDE5'
 
+// Amount in euros users will earn for their first delivery
 export const AMOUNT_IN_EUROS: number = 10
 
+// Domain of the new sponsor website
 export const METADATA_BASE: Metadata['metadataBase'] = new URL(
   'https://www.frichti-market-code-promo.fr'
 )
 
+// The CSS url of the main background (don't forget to update the file in public folder)
 export const MAIN_BACKGROUND_URL: string = "url('/frichti-background.webp')"
 
+// The homepage meta title
 export const TITLE: string = `Code promo de ${AMOUNT_IN_EUROS}€ offert sur Frichti Market en 2024`
 
+// The homepage meta description
 export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur votre 1ère commande sur le site Frichti Market · Livraison gratuite dès 50€ d'achat · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
 
+// Google Analytics ID
 export const GA_ID: string = 'G-GJGLYTKB81'
 
+// Theme color
 export const THEME_COLOR: Viewport['themeColor'] = '#faf190'
 
+// The name of the company
 export const COMPANY_NAME: string = 'New Frichti SAS'
 
+// The name of the product
 export const PRODUCT_NAME: string = 'Frichti Market'
 
+// Questions and answers for SEO
 export const FAQ: FaqProps['faq'] = [
   {
     question:

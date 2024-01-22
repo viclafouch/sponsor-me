@@ -21,18 +21,24 @@ const templateFiles = [
 ]
 
 async function start() {
-  // let productName = await rl.question('Name of the product : ')
+  let productName = await rl.question('Name of the product : ')
 
-  // if (!productName) {
-  //   return
-  // }
+  if (!productName) {
+    process.exit(1)
 
-  // productName = productName.toLowerCase()
-  const productName = 'test'
+    return
+  }
 
-  // rl.close()
+  productName = productName.toLowerCase()
+
+  rl.close()
 
   const productFolder = path.resolve(appsFolder, productName)
+  const appsPaths = await fs.readdir(appsFolder, { withFileTypes: true })
+  const appsCount = appsPaths.filter((dirent) => {
+    return dirent.isDirectory()
+  }).length
+  const newPort = `300${appsCount}`
 
   try {
     await fs.mkdir(productFolder)
@@ -57,14 +63,14 @@ async function start() {
   const packageJson = path.resolve(productFolder, 'package.json')
   const { default: packageJsonData } = await import(packageJson)
   packageJsonData.name = productName
+  packageJsonData.scripts.dev = `next dev -p ${newPort}`
   await fs.writeFile(
     packageJson,
     `${JSON.stringify(packageJsonData, null, 2)}\n`
   )
 
-  // console.log(packageJson)
-
-  console.log('run `pnpm i`')
+  // eslint-disable-next-line no-console
+  console.log('\x1b[32m', `Run 'pnpm i'`)
 }
 
 start()
