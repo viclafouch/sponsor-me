@@ -1,0 +1,36 @@
+{
+  "name": "@repo/ui",
+  "version": "0.0.0",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "src"
+  ],
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "exports": {
+    "./styles.css": "./dist/index.css",
+    ".": "./src"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "build": "tailwindcss -i ./src/styles.css -o dist/index.css",
+    "lint": "eslint src/"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^18.2.46",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.4.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
