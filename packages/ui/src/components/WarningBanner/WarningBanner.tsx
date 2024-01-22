@@ -12,7 +12,7 @@ const WarningBanner = ({ companyName }: WarningBannerProps) => {
       role="presentation"
     >
       <p aria-hidden="true" className="ui-text-center umax-w-2xl ui-mx-auto">
-        Ce site Web n&apos;est pas affilié à {companyName}.
+        Ce site web n&apos;est pas affilié à {companyName}.
       </p>
     </header>
   )
