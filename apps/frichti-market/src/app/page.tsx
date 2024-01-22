@@ -54,7 +54,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <p className="text-balance mx-auto max-w-xl px-10 text-center italic text-black mt-10">
+          <p className="mx-auto max-w-2xl px-10 text-center italic text-black mt-10">
             Un bandeau noir apparaîtra sur le site de {METAS.PRODUCT_NAME} vous
             indiquant que <br /> le bon de{' '}
             <b>{METAS.AMOUNT_IN_EUROS}€ a bien été pris en compte</b>.
