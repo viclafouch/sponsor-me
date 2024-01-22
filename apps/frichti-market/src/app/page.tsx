@@ -26,7 +26,7 @@ const Home = () => {
               priority
               width={600}
               height={46}
-              alt="Frichti Market"
+              alt={METAS.PRODUCT_NAME}
             />
           </div>
           <div className="px-10 w-full mt-10">
@@ -35,7 +35,10 @@ const Home = () => {
               <div className="flex flex-col items-center gap-4 border-black border-solid border bg-white px-6 py-7 z-10 relative right-2 bottom-2">
                 <div className="text-center text-2xl">
                   <h1 className="uppercase font-bold">
-                    {METAS.AMOUNT_IN_EUROS}€ sur votre 1ère commande
+                    {METAS.AMOUNT_IN_EUROS}€ sur{' '}
+                    {METAS.FOR_NUMBER_OF_COMMANDS > 1
+                      ? `vos ${METAS.FOR_NUMBER_OF_COMMANDS} premières commandes`
+                      : 'votre 1ère commande'}
                   </h1>
                   en cliquant sur le bouton ci-dessous
                 </div>
