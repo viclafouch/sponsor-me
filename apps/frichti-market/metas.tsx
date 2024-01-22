@@ -11,9 +11,9 @@ export const METADATA_BASE: Metadata['metadataBase'] = new URL(
 
 export const MAIN_BACKGROUND_URL: string = "url('/frichti-background.webp')"
 
-export const TITLE = `Code promo de ${AMOUNT_IN_EUROS}€ offert sur Frichti Market en 2024`
+export const TITLE: string = `Code promo de ${AMOUNT_IN_EUROS}€ offert sur Frichti Market en 2024`
 
-export const DESCRIPTION = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur votre 1ère commande sur le site Frichti Market · Livraison gratuite dès 50€ d'achat · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
+export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur votre 1ère commande sur le site Frichti Market · Livraison gratuite dès 50€ d'achat · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
 
 export const GA_ID: string = 'G-GJGLYTKB81'
 

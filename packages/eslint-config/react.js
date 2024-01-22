@@ -1,27 +1,20 @@
-const { resolve } = require("node:path");
-
-const project = resolve(process.cwd(), "tsconfig.json");
-
 /**
  * @type {import("eslint").Linter.Config}
  */
 module.exports = {
   extends: [
-    "@viclafouch/eslint-config-viclafouch",
-    "@viclafouch/eslint-config-viclafouch/imports",
-    "@viclafouch/eslint-config-viclafouch/react",
-    "@viclafouch/eslint-config-viclafouch/hooks",
-    "@viclafouch/eslint-config-viclafouch/typescript",
-    "@viclafouch/eslint-config-viclafouch/prettier"
+    '@viclafouch/eslint-config-viclafouch',
+    '@viclafouch/eslint-config-viclafouch/imports',
+    '@viclafouch/eslint-config-viclafouch/react',
+    '@viclafouch/eslint-config-viclafouch/hooks',
+    '@viclafouch/eslint-config-viclafouch/typescript',
+    '@viclafouch/eslint-config-viclafouch/prettier'
   ].map(require.resolve),
-  parserOptions: {
-    project,
-  },
-  ignorePatterns: ["node_modules/", "dist/"],
+  ignorePatterns: ['node_modules/', 'dist/'],
   overrides: [
     {
       extends: ['plugin:@typescript-eslint/disable-type-checked'],
-      files: ['./**/*.js'],
-    },
+      files: ['./**/*.js']
+    }
   ]
 }

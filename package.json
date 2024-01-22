@@ -7,17 +7,24 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
+    "type-check": "turbo type-check",
     "clean": "turbo clean",
+    "create-sponsor": "tsx tasks/create-sponsor.ts",
     "ncu": "npx npm-check-updates --deep --prefix '~/apps'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "turbo": "^1.11.3",
-    "@repo/typescript-config": "workspace:*"
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "turbo": "^1.11.3"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@8.9.0"
+  "packageManager": "pnpm@8.9.0",
+  "dependencies": {
+    "@types/node": "^20.11.5",
+    "tsx": "^4.7.0"
+  }
 }
