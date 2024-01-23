@@ -26,6 +26,9 @@ export const METADATA_BASE: Metadata['metadataBase'] = new URL(
   'https://www.deliveroo-promo-code.com'
 )
 
+// The logo source URL (don't forget to update the file in public folder)
+export const LOGO_URL: string = '/logo-deliveroo.webp'
+
 // The CSS url of the main background (don't forget to update the file in public folder)
 export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
 

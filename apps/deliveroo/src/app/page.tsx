@@ -15,7 +15,7 @@ const Home = () => {
         <div>
           <div className="px-10 flex flex-col items-center gap-y-2">
             <Image
-              src="/logo-deliveroo.webp"
+              src={METAS.LOGO_URL}
               priority
               width={180}
               height={46}

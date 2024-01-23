@@ -22,7 +22,7 @@ const Home = () => {
               alt={METAS.PRODUCT_NAME}
             />
             <Image
-              src="/logo-frichti-market.png"
+              src={METAS.LOGO_URL}
               priority
               width={600}
               height={46}
