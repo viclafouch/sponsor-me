@@ -42,7 +42,7 @@ export const TITLE: string = `Code promo de ${AMOUNT_IN_EUROS}€ offert sur ${P
 export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite dès ${AMOUNT_FOR_FREE_DELIVERY}€ d'achat · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
 
 // Google Analytics ID, can be empty
-export const GA_ID: string = ''
+export const GA_ID: string = 'G-L8T9GYDHJ2'
 
 // Theme color
 export const THEME_COLOR: Viewport['themeColor'] = '#f2787a'
