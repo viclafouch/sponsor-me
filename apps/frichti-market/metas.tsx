@@ -11,10 +11,10 @@ export const AMOUNT_IN_EUROS: number = 10
 export const AMOUNT_FOR_FREE_DELIVERY: number = 50
 
 // The minimum of order required from the user
-export const MINIMUM_AMOUNT_IN_EUROS_TO_USE: number = 10
+export const MINIMUM_AMOUNT_IN_EUROS_TO_USE: number = 30
 
 // For the n first orders, user can benefit from the discount
-export const FOR_NUMBER_OF_COMMANDS: number = 2
+export const FOR_NUMBER_OF_COMMANDS: number = 1
 
 // The name of the company
 export const COMPANY_NAME: string = 'New Frichti SAS'
