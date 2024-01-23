@@ -8,11 +8,5 @@ module.exports = {
     '@viclafouch/eslint-config-viclafouch/typescript',
     '@viclafouch/eslint-config-viclafouch/prettier'
   ].map(require.resolve),
-  ignorePatterns: ['node_modules/', 'dist/'],
-  overrides: [
-    {
-      extends: ['plugin:@typescript-eslint/disable-type-checked'],
-      files: ['./**/*.js']
-    }
-  ]
+  ignorePatterns: ['node_modules/', 'dist/']
 }
