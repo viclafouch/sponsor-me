@@ -1,6 +1,6 @@
 # Sponsor Me
 
-Sponsor Me is a repository that includes several Next.js applications to provide my sponsorship link of some websites (`deliveroo`, `frichti-market`, ...).
+Sponsor Me is a repository that includes several Next.js applications to provide my sponsorship link of some websites (`deliveroo`, `frichti-market`, ...). The folder `apps` contains applications deployed on Vercel.
 
 ## Created with Sponsor Me
 
@@ -8,14 +8,14 @@ Sponsor Me is a repository that includes several Next.js applications to provide
 <tr>
 <td align="center">
 <img style="width: 240px" src="apps/frichti-market/src/app/opengraph-image.png" />
-<p><a href="https://www.frichti-market-code-promo.fr">https://www.frichti-market-code-promo.fr/</a></p>
+<p><a href="https://www.frichti-market-code-promo.fr">frichti-market-code-promo.fr</a></p>
 </td>
 <td align="center">
-<img style="width: 240px" src="apps/frichti-market/src/app/opengraph-image.png" />
-<p><a href="https://www.deliveroo-promo-code.com">https://www.deliveroo-promo-code.com/</a></p>
+<img style="width: 240px" src="apps/deliveroo/src/app/opengraph-image.png" />
+<p><a href="https://www.deliveroo-promo-code.com">deliveroo-promo-code.com</a></p>
 </td>
 <td align="center">
-<em>View <a href="#websites-list">More websites created</a> !</em>
+<em>View <a href="#websites-list">More created websites</a> !</em>
 </td>
 </tr>
 </table>
