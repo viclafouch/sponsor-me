@@ -7,10 +7,10 @@ import * as METAS from '../../metas'
 const Home = () => {
   return (
     <>
-      <GoogleAnalytics gaId={METAS.GA_ID} />
+      {METAS.GA_ID ? <GoogleAnalytics gaId={METAS.GA_ID} /> : null}
       <div
         style={{ backgroundImage: METAS.MAIN_BACKGROUND_URL }}
-        className="min-h-screen flex flex-col justify-center items-center bg-main flex-1 bg-cover bg-no-repeat bg-center"
+        className="min-h-dvh flex flex-col justify-center items-center bg-main flex-1 bg-cover bg-no-repeat bg-center"
       >
         <div>
           <div className="px-10 flex flex-col items-center gap-y-2">
@@ -43,7 +43,7 @@ const Home = () => {
                   en cliquant sur le bouton ci-dessous
                 </div>
                 <a
-                  className="text-center bg-black text-white p-4 rounded-full block"
+                  className="text-center bg-black text-white p-4 md:rounded-full block shadow-lg"
                   href={METAS.SPONSOR_LINK}
                   title={`Aller sur ${METAS.PRODUCT_NAME}`}
                   target="_blank"

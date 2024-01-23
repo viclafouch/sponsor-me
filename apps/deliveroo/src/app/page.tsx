@@ -10,7 +10,7 @@ const Home = () => {
       <GoogleAnalytics gaId={METAS.GA_ID} />
       <div
         style={{ backgroundImage: METAS.MAIN_BACKGROUND_URL }}
-        className="min-h-screen flex flex-col justify-center items-center bg-white flex-1 bg-cover bg-no-repeat bg-center"
+        className="min-h-dvh flex flex-col justify-center items-center bg-white flex-1 bg-cover bg-no-repeat bg-center"
       >
         <div>
           <div className="px-10 flex flex-col items-center gap-y-2">

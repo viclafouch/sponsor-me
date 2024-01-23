@@ -7,6 +7,9 @@ export const SPONSOR_LINK: string = 'https://www.frichtimarket.com/r/NDQyMDE5'
 // Amount in euros users will earn for their first delivery
 export const AMOUNT_IN_EUROS: number = 10
 
+// The minimum order to avoid delivery charges
+export const AMOUNT_FOR_FREE_DELIVERY: number = 50
+
 // The minimum of order required from the user
 export const MINIMUM_AMOUNT_IN_EUROS_TO_USE: number = 10
 
@@ -33,9 +36,9 @@ export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
 export const TITLE: string = `Code promo de ${AMOUNT_IN_EUROS}€ offert sur ${PRODUCT_NAME} en ${CURRENT_YEAR}`
 
 // The homepage meta description
-export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite dès 50€ d'achat · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
+export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite dès ${AMOUNT_FOR_FREE_DELIVERY}€ d'achat · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
 
-// Google Analytics ID
+// Google Analytics ID, can be empty
 export const GA_ID: string = 'G-GJGLYTKB81'
 
 // Theme color
@@ -99,8 +102,7 @@ export const FAQ: FaqProps['faq'] = [
   },
   {
     question: `Quels sont les frais de livraison sur ${PRODUCT_NAME} ?`,
-    answer:
-      "Les frais de livraison sont d'environ 1.99€ par commande. Ils deviennent gratuit après 50€ d'achat."
+    answer: `Les frais de livraison sont d'environ 1.99€ par commande. Ils deviennent gratuit après ${AMOUNT_FOR_FREE_DELIVERY}€ d'achat.`
   },
   {
     question: `En savoir plus sur ${PRODUCT_NAME}`,

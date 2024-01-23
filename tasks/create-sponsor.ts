@@ -29,7 +29,7 @@ async function start() {
     return
   }
 
-  productName = productName.toLowerCase()
+  productName = productName.toLowerCase().replaceAll(' ', '-').trim()
 
   rl.close()
 
@@ -70,7 +70,14 @@ async function start() {
   )
 
   // eslint-disable-next-line no-console
-  console.log('\x1b[32m', `Run 'pnpm i'`)
+  console.log(
+    '\x1b[32m',
+    `/apps/${productName} next.js app successfully created !`
+  )
+  console.log(
+    '\x1b[32m',
+    `Run the following command to install deps : 'pnpm i'`
+  )
 }
 
 start()
