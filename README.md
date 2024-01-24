@@ -47,6 +47,7 @@ Now, you have to update the `metas.tsx` file, the `public` folder, and some meta
 * https://www.frichti-market-code-promo.fr ➡️ for [Frichti Market 🇫🇷](https://www.frichtimarket.com) ;
 * https://www.labellevie-code-promo.fr ➡️ for [La Belle Vie 🇫🇷](https://www.labellevie.com) ;
 * https://www.deliveroo-promo-code.com ➡️ for [Deliveroo](https://deliveroo.com) ;
+* https://www.bamcourses-code-promo.fr ➡️ for [Bam Courses 🇫🇷](https://www.bamcourses.com) ;
 
 ### What I use to develop a website 🚀
 
