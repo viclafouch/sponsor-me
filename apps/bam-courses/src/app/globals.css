@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 0, 0, 0;
+  --text-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-rgb: 255, 255, 255;
+    --text-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--text-rgb));
+  background: var(--background-rgb);
+}
+
+.bg-custom {
+  background-image: url('https://www.bamcourses.com/statics/images/home/bam-banner-panier-v1.png'),
+    url('https://www.bamcourses.com/statics/images/home/bam-banner-primeur-v1.png'),
+    url('https://www.bamcourses.com/statics/images/home/bam-banner-produits-v1.png');
+  background-size: 180px, 180px, 260px;
+  background-position:
+    left bottom,
+    right bottom,
+    center bottom;
+}
+
+@media (min-width: 640px) {
+  .bg-custom {
+    background-image: url('/bam-banner-1.webp'),
+      url('/bam-banner-2.webp'),
+      url('/bam-banner-3.webp');
+    background-size: 200px, 300px, 200px;
+    background-position:
+      left bottom,
+      center bottom,
+      right bottom
+  }
+}
