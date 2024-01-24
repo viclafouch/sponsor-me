@@ -12,7 +12,7 @@ const Home = () => {
         <div>
           <div className="px-10 flex flex-col items-center gap-y-2">
             <Image
-              src="/picto-1.png"
+              src="/picto-1.webp"
               priority
               width={150}
               height={50}
