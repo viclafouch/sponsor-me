@@ -21,7 +21,7 @@ const RootLayout = ({
   return (
     <html lang="fr">
       <body className={clxs([inter.className, 'min-h-dvh'])}>
-      <Header />
+        <Header />
         <main className="min-h-dvh">{children}</main>
         <Footer />
       </body>
