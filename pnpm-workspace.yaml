@@ -2,4 +2,3 @@ packages:
   - "apps/*"
   - "packages/*"
   - "one-to-rule-them-all"
-  - "crons"
