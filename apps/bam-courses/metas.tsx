@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
@@ -22,6 +22,10 @@ export const COMPANY_NAME: string = 'Deleev'
 // The name of the product
 export const PRODUCT_NAME: string = 'Bam Courses'
 
+// Short description of the product
+export const PRODUCT_SHORT_DESCRIPTIION: string =
+  'Bam Courses propose une application mobile et un site web truffé de produits livrés en 15 minutes.'
+
 export const CURRENT_YEAR: number = new Date().getFullYear()
 
 // Domain of the new sponsor website
@@ -31,6 +35,9 @@ export const METADATA_BASE: Metadata['metadataBase'] = new URL(
 
 // The logo source URL (don't forget to update the file in public folder)
 export const LOGO_URL: string = '/logo-bamcourses.webp'
+
+// The logo uses in sponsor me website (don't forget to update the file in public folder of the project)
+export const SPONSOR_ME_LOGO_NAME: string = 'bam-courses-logo.png'
 
 // The CSS url of the main background (don't forget to update the file in public folder)
 export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
@@ -45,7 +52,7 @@ export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion 
 export const GA_ID: string = 'G-0YR6TY43QY'
 
 // Theme color
-export const THEME_COLOR: Viewport['themeColor'] = '#2196f3'
+export const THEME_COLOR: string = '#2196f3'
 
 // Link to Android product application
 export const ANDROID_APP_LINK: string =

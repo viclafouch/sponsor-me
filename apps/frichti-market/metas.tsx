@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
@@ -24,6 +24,10 @@ export const PRODUCT_NAME: string = 'Frichti Market'
 
 export const CURRENT_YEAR: number = new Date().getFullYear()
 
+// Short description of the product
+export const PRODUCT_SHORT_DESCRIPTIION: string =
+  'Découvrez Frichti et dégustez des plats aussi frais que vous, avec une livraison en 1h30.'
+
 // Domain of the new sponsor website
 export const METADATA_BASE: Metadata['metadataBase'] = new URL(
   'https://www.frichti-market-code-promo.fr'
@@ -31,6 +35,9 @@ export const METADATA_BASE: Metadata['metadataBase'] = new URL(
 
 // The logo source URL (don't forget to update the file in public folder)
 export const LOGO_URL: string = '/logo-frichti-market.png'
+
+// The logo uses in sponsor me website (don't forget to update the file in public folder of the project)
+export const SPONSOR_ME_LOGO_NAME: string = 'frichti-market-logo.png'
 
 // The CSS url of the main background (don't forget to update the file in public folder)
 export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
@@ -45,7 +52,7 @@ export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion 
 export const GA_ID: string = 'G-GJGLYTKB81'
 
 // Theme color
-export const THEME_COLOR: Viewport['themeColor'] = '#faf190'
+export const THEME_COLOR: string = '#faf190'
 
 // Link to Android product application
 export const ANDROID_APP_LINK: string =

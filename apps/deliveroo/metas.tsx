@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
@@ -19,6 +19,10 @@ export const COMPANY_NAME: string = 'Deliveroo'
 // The name of the product
 export const PRODUCT_NAME: string = 'Deliveroo'
 
+// Short description of the product
+export const PRODUCT_SHORT_DESCRIPTIION: string =
+  "Explorez une variété de cuisines et profitez d'une livraison rapide avec Deliveroo."
+
 export const CURRENT_YEAR: number = new Date().getFullYear()
 
 // Domain of the new sponsor website
@@ -28,6 +32,9 @@ export const METADATA_BASE: Metadata['metadataBase'] = new URL(
 
 // The logo source URL (don't forget to update the file in public folder)
 export const LOGO_URL: string = '/logo-deliveroo.webp'
+
+// The logo uses in sponsor me website (don't forget to update the file in public folder of the project)
+export const SPONSOR_ME_LOGO_NAME: string = 'deliveroo-logo.jpeg'
 
 // The CSS url of the main background (don't forget to update the file in public folder)
 export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
@@ -42,7 +49,7 @@ export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion 
 export const GA_ID: string = 'G-ZQPYC60MX9'
 
 // Theme color
-export const THEME_COLOR: Viewport['themeColor'] = '#00ccbc'
+export const THEME_COLOR: string = '#00ccbc'
 
 // Link to Android product application
 export const ANDROID_APP_LINK: string =
