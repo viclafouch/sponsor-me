@@ -2,6 +2,8 @@ import edgeChromium from 'chrome-aws-lambda'
 import puppeteer from 'puppeteer'
 import { Resend } from 'resend'
 
+export const config = {}
+
 // eslint-disable-next-line prefer-destructuring
 const LOGIN_EMAIL_FRICHTI_MARKET = process.env.LOGIN_EMAIL_FRICHTI_MARKET
 // eslint-disable-next-line prefer-destructuring
@@ -20,14 +22,14 @@ async function wait(delay) {
 const LOCAL_CHROME_EXECUTABLE =
   '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
-export async function GET() {
+export default async function handler() {
   const executablePath =
     (await edgeChromium.executablePath) || LOCAL_CHROME_EXECUTABLE
 
   const browser = await puppeteer.launch({
     executablePath,
     args: edgeChromium.args,
-    headless: false
+    headless: true
   })
   // Launch the browser and open a new blank page
   const page = await browser.newPage()
@@ -43,6 +45,8 @@ export async function GET() {
   // Open login modal
   await page.hover('.o-user-menu .name')
   await page.click('.user-login')
+
+  await wait(200)
 
   // Type login and password
   await page.type('input[type="email"]', LOGIN_EMAIL_FRICHTI_MARKET)
