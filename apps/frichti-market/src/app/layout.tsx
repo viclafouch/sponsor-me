@@ -17,6 +17,8 @@ const viewport: Viewport = {
   themeColor: METAS.THEME_COLOR
 }
 
+export const revalidate = 6000
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="fr">
