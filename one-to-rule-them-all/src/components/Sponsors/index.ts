@@ -1,4 +1,4 @@
-import Sponsors, { SponsorsProps } from './Sponsors'
+import Sponsors, { type SponsorsProps } from './Sponsors'
 
 export type { SponsorsProps }
 

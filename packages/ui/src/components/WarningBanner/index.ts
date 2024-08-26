@@ -1,4 +1,4 @@
-import WarningBanner, { WarningBannerProps } from './WarningBanner'
+import WarningBanner, { type WarningBannerProps } from './WarningBanner'
 
 export type { WarningBannerProps }
 

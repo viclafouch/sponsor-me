@@ -1,4 +1,4 @@
-import Faq, { FaqProps } from './Faq'
+import Faq, { type FaqProps } from './Faq'
 
 export type { FaqProps }
 

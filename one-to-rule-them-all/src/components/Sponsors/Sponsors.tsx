@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { MetasApps } from '../../../sponsors'
+import { type MetasApps } from '../../../sponsors'
 
 export type SponsorsProps = {
   metasApps: MetasApps
@@ -21,8 +21,6 @@ const Sponsors = ({ metasApps }: SponsorsProps) => {
         </div>
         <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           {metasApps.map((metasApp) => {
-            console.log(metasApp)
-
             return (
               <div
                 key={metasApp.name}

@@ -1,4 +1,4 @@
-import Footer, { FooterProps } from './Footer'
+import Footer, { type FooterProps } from './Footer'
 
 export type { FooterProps }
 
