@@ -6,12 +6,8 @@ const resend = new Resend(process.env.RESEND_KEY)
 
 const ACCOUNTS_FRICHTI_MARKET = [
   {
-    cookie: process.env.COOKIE,
-    email: 'victor.delafouchardiere@frichti.co'
-  },
-  {
-    cookie: process.env.COOKIE_1,
-    email: 'tutobwim@gmail.com'
+    cookie: process.env.FRICHTI_MARKET_COOKIE,
+    email: 'victor.delafouchardiere@zoi.com'
   }
 ]
 
@@ -45,5 +41,17 @@ export default async function handler(request, response) {
       .join('')}</p>`
   })
 
-  return response.send({ message: 'Email sent to victor.dlf@outlook.fr' })
+  // Vercel CLI
+  if (response) {
+    return response.send({ message: 'Email sent to victor.dlf@outlook.fr' })
+  }
+
+  // Local CLI
+  // eslint-disable-next-line no-console
+  return console.log({ message: 'Email sent to victor.dlf@outlook.fr' })
+}
+
+// Local CLI, just run this file with node
+if (!process.env.VERCEL) {
+  handler()
 }

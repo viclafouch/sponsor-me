@@ -7,6 +7,7 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
+    "local-cron": "node --env-file=.env crons/api/cron.js",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "create-sponsor": "tsx tasks/create-sponsor.ts",
