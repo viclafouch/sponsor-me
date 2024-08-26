@@ -4,6 +4,6 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "@viclafouch/eslint-config-viclafouch": "^4.14.0"
+    "@viclafouch/eslint-config-viclafouch": "4.11.0"
   }
 }
