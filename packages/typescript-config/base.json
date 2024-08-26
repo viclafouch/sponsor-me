@@ -1,4 +1,7 @@
 {
   "extends": "@viclafouch/eslint-config-viclafouch/tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext"
+  },
   "display": "Base"
 }
