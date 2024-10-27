@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_KEY)
 const ACCOUNTS_FRICHTI_MARKET = [
   {
     cookie: process.env.FRICHTI_MARKET_COOKIE,
-    email: 'victor.delafouchardiere@gmail.com'
+    email: 'camillebournier@hotmail.fr'
   }
 ]
 
