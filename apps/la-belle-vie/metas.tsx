@@ -30,7 +30,7 @@ export const PRODUCT_SHORT_DESCRIPTIION: string =
 
 // Domain of the new sponsor website
 export const METADATA_BASE: Metadata['metadataBase'] = new URL(
-  'https://ww.labellevie-code-promo.fr'
+  'https://www.labellevie-code-promo.fr'
 )
 
 // The logo source URL (don't forget to update the file in public folder)
