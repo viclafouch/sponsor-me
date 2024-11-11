@@ -53,12 +53,12 @@ const Home = () => {
         </div>
       </div>
       <div className="py-10 max-w-screen-md m-auto px-10">
-        <div className="ui-flex ui-flex-col ui-items-center ui-gap-y-6">
+        <div className="flex flex-col items-center gap-y-6">
           <header>
-            <h2 className="ui-text-4xl ui-font-semibold">
+            <h2 className="text-4xl font-semibold">
               {METAS.PRODUCT_NAME} Parrainage {new Date().getFullYear()}
             </h2>
-            <p className="ui-mt-5 ui-mb-5">
+            <p className="mt-5 mb-5">
               Obtenez{' '}
               <b>
                 {METAS.AMOUNT_TO_EARN}
@@ -70,7 +70,7 @@ const Home = () => {
               {METAS.PRODUCT_NAME} avec le lien de parrainage suivant :{' '}
               <a
                 title={`Aller sur ${METAS.PRODUCT_NAME}`}
-                className="ui-text-bluelight ui-underline"
+                className="text-bluelight underline"
                 href={METAS.SPONSOR_LINK}
               >
                 {METAS.SPONSOR_LINK}
