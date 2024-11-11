@@ -12,19 +12,19 @@ const Home = () => {
         style={{ backgroundImage: METAS.MAIN_BACKGROUND_URL }}
         className="min-h-dvh flex flex-col justify-center items-center bg-main flex-1 bg-cover bg-no-repeat bg-center"
       >
-        <div>
+        <div className="border-black/10 shadow-md border-solid border bg-white py-6 rounded-[20px] flex flex-col gap-6 w-full max-w-2xl">
           <div className="px-10 flex flex-col items-center gap-y-2">
             <Image
               src={METAS.LOGO_URL}
               priority
-              width={200}
-              height={167}
+              width={300}
+              height={46}
               alt={METAS.PRODUCT_NAME}
             />
           </div>
-          <div className="px-10 w-full mt-10">
+          <div className="w-full">
             <div className="w-full max-w-xl mx-auto relative">
-              <div className="flex flex-col items-center gap-4 bg-white px-6 py-7 shadow-2xl rounded-sm">
+              <div className="flex flex-col items-center gap-4 px-6">
                 <div className="text-center text-2xl">
                   <h1 className="text-balance uppercase font-bold">
                     {METAS.H1_CONTENT}
@@ -32,7 +32,7 @@ const Home = () => {
                   en cliquant sur le bouton ci-dessous
                 </div>
                 <a
-                  className="text-center text-lg bg-main text-white p-4 md:rounded-sm block shadow-lg"
+                  className="text-center bg-[#05f] hover:bg-[#004de6] text-white p-4 md:rounded-full block shadow-lg"
                   href={METAS.SPONSOR_LINK}
                   title={`Aller sur ${METAS.PRODUCT_NAME}`}
                   target="_blank"
@@ -40,15 +40,17 @@ const Home = () => {
                 >
                   {METAS.BUTTON_CONTENT}
                 </a>
+                {METAS.NOTICE_CONTENT ? (
+                  <p className="mx-auto px-10 text-center italic text-black">
+                    {METAS.NOTICE_CONTENT}
+                  </p>
+                ) : null}
               </div>
             </div>
           </div>
-          <p className="mx-auto max-w-2xl px-10 text-center italic text-black mt-7">
-            {METAS.NOTICE_CONTENT}
-          </p>
         </div>
       </div>
-      <div className="py-10 max-w-screen-md m-auto px-10">
+      <div className="max-w-screen-md m-auto px-10 mt-10">
         <div className="ui-flex ui-flex-col ui-items-center ui-gap-y-6">
           <header>
             <h2 className="ui-text-4xl ui-font-semibold">
@@ -58,10 +60,7 @@ const Home = () => {
               Obtenez{' '}
               <b>
                 {METAS.AMOUNT_TO_EARN}
-                {METAS.AMOUNT_UNIT} de réduction sur{' '}
-                {METAS.FOR_NUMBER_OF_COMMANDS > 1
-                  ? `vos ${METAS.FOR_NUMBER_OF_COMMANDS} premières commande`
-                  : 'votre première commande'}
+                {METAS.AMOUNT_UNIT} en plus sur
               </b>{' '}
               {METAS.PRODUCT_NAME} avec le lien de parrainage suivant :{' '}
               <a

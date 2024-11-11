@@ -67,7 +67,8 @@ const Home = () => {
             <p className="ui-mt-5 ui-mb-5">
               Obtenez{' '}
               <b>
-                {METAS.AMOUNT_TO_EARN}${METAS.AMOUNT_UNIT} de réduction sur{' '}
+                {METAS.AMOUNT_TO_EARN}
+                {METAS.AMOUNT_UNIT} de réduction sur{' '}
                 {METAS.FOR_NUMBER_OF_COMMANDS > 1
                   ? `vos ${METAS.FOR_NUMBER_OF_COMMANDS} premières commande`
                   : 'votre première commande'}

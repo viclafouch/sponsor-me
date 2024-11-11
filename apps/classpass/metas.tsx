@@ -1,38 +1,36 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
-export const SPONSOR_LINK: string = 'https://www.bamcourses.com/r/NTEyNjAy'
+export const SPONSOR_LINK: string = 'https://classpass.com/refer/P32LCQME25'
 
 // Amount in euros users will earn for their first delivery
-export const AMOUNT_TO_EARN: number = 10
+export const AMOUNT_TO_EARN: number = 20
 
 // The type of amount users will earn
-export const AMOUNT_UNIT: string = '€'
+export const AMOUNT_UNIT: string = ' crédits'
 
 // The minimum order to avoid delivery charges
-export const AMOUNT_FOR_FREE_DELIVERY: number = 35
+export const AMOUNT_FOR_FREE_DELIVERY: number = 50
 
 // The minimum of order required from the user
-export const MINIMUM_AMOUNT_TO_EARN_TO_USE: number = 50
+export const MINIMUM_AMOUNT_TO_EARN_TO_USE: number = 30
 
 // For the n first orders, user can benefit from the discount
 export const FOR_NUMBER_OF_COMMANDS: number = 1
 
 // The name of the company
-export const COMPANY_NAME: string = 'Deleev'
+export const COMPANY_NAME: string = 'ClassPass'
 
 // The name of the product
-export const PRODUCT_NAME: string = 'Bam Courses'
+export const PRODUCT_NAME: string = 'ClassPass'
 
 // Content of the H1 of the website
 export const H1_CONTENT: React.ReactNode = (
   <>
     {AMOUNT_TO_EARN}
-    {AMOUNT_UNIT} sur{' '}
-    {FOR_NUMBER_OF_COMMANDS > 1
-      ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes`
-      : 'votre 1ère commande'}
+    {AMOUNT_UNIT} à gagner pour 1€
   </>
 )
 
@@ -42,13 +40,8 @@ export const BUTTON_CONTENT: React.ReactNode = `Je profite de mes ${AMOUNT_TO_EA
 // Content of the notice of the website
 export const NOTICE_CONTENT: React.ReactNode = (
   <>
-    Un bandeau noir apparaîtra sur le site de {PRODUCT_NAME} vous indiquant que{' '}
-    <br /> le bon de{' '}
-    <b>
-      {AMOUNT_TO_EARN}
-      {AMOUNT_UNIT} a bien été pris en compte
-    </b>
-    .
+    L’offre est réservée aux nouveaux membres. L’essai est limité à certaines
+    salles de sport et de fitness.
   </>
 )
 
@@ -62,44 +55,45 @@ export const CURRENT_FORMATTED_DATE = new Intl.DateTimeFormat('fr-FR', {
 
 // Short description of the product
 export const PRODUCT_SHORT_DESCRIPTIION: string =
-  'Bam Courses propose une application mobile et un site web truffé de produits livrés en 15 minutes.'
+  "Découvre une appli tout-en-un dédiée au fitness, aux salles de sport et aux séances de bien-être et de beauté. Profite d'options variées, que ce soit en salle, en extérieur ou en ligne, accessibles dans plus de 2 500 villes dans le monde."
 
 // Domain of the new sponsor website
 export const METADATA_BASE: Metadata['metadataBase'] = new URL(
-  'https://www.bamcourses-code-promo.fr'
+  'https://www.classpass-code-promo.fr'
 )
 
 // The logo source URL (don't forget to update the file in public folder)
-export const LOGO_URL: string = '/logo-bamcourses.webp'
+export const LOGO_URL: string = '/logo-classpass.svg'
 
 // The logo uses in sponsor me website (don't forget to update the file in public folder of the project)
-export const SPONSOR_ME_LOGO_NAME: string = 'bam-courses-logo.png'
+export const SPONSOR_ME_LOGO_NAME: string = '/logo-classpass.svg'
 
 // The CSS url of the main background (don't forget to update the file in public folder)
-export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
+export const MAIN_BACKGROUND_URL: string = "url('/main-background.jpg')"
 
 // The homepage meta title
-export const TITLE: string = `Code promo de ${AMOUNT_TO_EARN}${AMOUNT_UNIT} offert sur ${PRODUCT_NAME} en ${CURRENT_FORMATTED_DATE}`
+export const TITLE: string = `${AMOUNT_TO_EARN}${AMOUNT_UNIT} offerts sur ${PRODUCT_NAME} en ${CURRENT_FORMATTED_DATE}`
 
 // The homepage meta description
-export const DESCRIPTION: string = `Offre de ${AMOUNT_TO_EARN}${AMOUNT_UNIT} de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite dès ${AMOUNT_FOR_FREE_DELIVERY}€ d'achat · Parrainage: ${AMOUNT_TO_EARN}${AMOUNT_UNIT} offerts.`
+export const DESCRIPTION: string = `Parrainage de ${AMOUNT_TO_EARN}${AMOUNT_UNIT} dès votre inscription sur le site ${PRODUCT_NAME} · Offre réservée aux nouveaux membres · Parrainage: ${AMOUNT_TO_EARN}${AMOUNT_UNIT} offerts pour réserver des cours, un accès à la salle et plus encore.
+`
 
 // Google Analytics ID, can be empty
-export const GA_ID: string = 'G-0YR6TY43QY'
+export const GA_ID: string = 'G-GJGLYTKB81'
 
 // Theme color
-export const THEME_COLOR: string = '#2196f3'
+export const THEME_COLOR: string = '#0055ff'
 
 // Link to Android product application
 export const ANDROID_APP_LINK: string =
-  'https://play.google.com/store/apps/details?id=com.deleev.bamcourses&hl=fr'
+  'https://play.google.com/store/apps/details?id=com.classpass.classpass'
 
 // Link to Apple product application
 export const APPLE_APP_LINK: string =
-  'https://itunes.apple.com/fr/app/id1569369194?mt=8'
+  'https://itunes.apple.com/us/app/classpass/id912947244?mt=8&uo=4'
 
 // Link to Desktop product
-export const DESKTOP_LINK: string = 'https://www.bamcourses.com'
+export const DESKTOP_LINK: string = 'https://classpass.fr'
 
 // Questions and answers for SEO
 export const FAQ: FaqProps['faq'] = [
@@ -116,16 +110,12 @@ export const FAQ: FaqProps['faq'] = [
         >
           {SPONSOR_LINK}
         </a>{' '}
-        — et créez votre compte. Les{' '}
+        — et indiquez votre email d&apos;inscription. Les{' '}
         <b>
           {AMOUNT_TO_EARN}
           {AMOUNT_UNIT}
         </b>{' '}
-        seront appliqués à{' '}
-        {FOR_NUMBER_OF_COMMANDS > 1
-          ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes`
-          : 'votre première commande'}
-        .
+        seront appliqués en plus de vos crédits de base.
       </>
     )
   },
@@ -137,26 +127,32 @@ export const FAQ: FaqProps['faq'] = [
         <b>
           {AMOUNT_TO_EARN}
           {AMOUNT_UNIT}
-        </b>
-        .
+        </b>{' '}
+        à utiliser en 14 jours.
       </>
     )
   },
   {
     question: 'Combien dois-je dépenser pour utiliser la promotion ?',
-    answer: `Selon la remise, le montant minimum de commande est de ${MINIMUM_AMOUNT_TO_EARN_TO_USE}€.`
+    answer: (
+      <>
+        L'offre coute 1€ seulement. Les <s>47</s> <b>67 crédits</b> sont à
+        utiliser pendant 14 jours.
+      </>
+    )
   },
   {
-    question: `Où ${PRODUCT_NAME} livre ?`,
-    answer: `${PRODUCT_NAME} livre en Île-de-France.`
+    question: 'Quels types de sport sont proposés ?',
+    answer: (
+      <>
+        Cycling, musculation, yoga… Accède à tous les cours de ton choix, où que
+        tu sois, avec un compte unique et flexible.
+      </>
+    )
   },
   {
-    question: `Quelles sont les heures d'ouverture de ${PRODUCT_NAME} ?`,
-    answer: 'Livraison en 4 heures en moyenne, 7j/7 de 8h à 23h.'
-  },
-  {
-    question: `Quels sont les frais de livraison sur ${PRODUCT_NAME} ?`,
-    answer: `Les frais de livraison sont d'environ 3.90€ par commande. Ils deviennent gratuit après ${AMOUNT_FOR_FREE_DELIVERY}€ d'achat.`
+    question: `Est-ce une offre avec engagement ?`,
+    answer: `Non, l’abonnement se renouvelle chaque mois, et tu as la possibilité de modifier ton forfait en toute simplicité.`
   },
   {
     question: `En savoir plus sur ${PRODUCT_NAME}`,

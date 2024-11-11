@@ -120,7 +120,11 @@ export const FAQ: FaqProps['faq'] = [
     answer: (
       <>
         Le montant du code promotionnel disponible gratuitement est de{' '}
-        <b>{AMOUNT_TO_EARN}€</b>.
+        <b>
+          {AMOUNT_TO_EARN}
+          {AMOUNT_UNIT}
+        </b>
+        .
       </>
     )
   },
@@ -161,7 +165,7 @@ export const FAQ: FaqProps['faq'] = [
           title="Télécharger l'application IOS"
           href={APPLE_APP_LINK}
         >
-          Apple App Store
+          Apple Store
         </a>{' '}
         ou{' '}
         <a
