@@ -5,7 +5,10 @@ import type { FaqProps } from '@repo/ui'
 export const SPONSOR_LINK: string = 'https://roo.it/victordlf8136'
 
 // Amount in euros users will earn for their first delivery
-export const AMOUNT_IN_EUROS: number = 10
+export const AMOUNT_TO_EARN: number = 10
+
+// The type of amount users will earn
+export const AMOUNT_UNIT: string = '€'
 
 // The minimum of order required from the user
 export const MINIMUM_AMOUNT_IN_EUROS_TO_USE: number = 0
@@ -18,6 +21,33 @@ export const COMPANY_NAME: string = 'Deliveroo'
 
 // The name of the product
 export const PRODUCT_NAME: string = 'Deliveroo'
+
+// Content of the H1 of the website
+export const H1_CONTENT: React.ReactNode = (
+  <>
+    {AMOUNT_TO_EARN}
+    {AMOUNT_UNIT} sur{' '}
+    {FOR_NUMBER_OF_COMMANDS > 1
+      ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes`
+      : 'votre 1ère commande'}
+  </>
+)
+
+// Content of the button of the website
+export const BUTTON_CONTENT: React.ReactNode = `Je profite de mes ${AMOUNT_TO_EARN}${AMOUNT_UNIT} offerts`
+
+// Content of the notice of the website
+export const NOTICE_CONTENT: React.ReactNode = (
+  <>
+    Un bandeau noir apparaîtra sur le site de {PRODUCT_NAME} vous indiquant que{' '}
+    <br /> le bon de{' '}
+    <b>
+      {AMOUNT_TO_EARN}
+      {AMOUNT_UNIT} a bien été pris en compte
+    </b>
+    .
+  </>
+)
 
 // Short description of the product
 export const PRODUCT_SHORT_DESCRIPTIION: string =
@@ -40,10 +70,10 @@ export const SPONSOR_ME_LOGO_NAME: string = 'deliveroo-logo.jpeg'
 export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
 
 // The homepage meta title
-export const TITLE: string = `Code promo de ${AMOUNT_IN_EUROS}€ offert sur ${PRODUCT_NAME} en ${CURRENT_YEAR}`
+export const TITLE: string = `Code promo de ${AMOUNT_TO_EARN}${AMOUNT_UNIT} offert sur ${PRODUCT_NAME} en ${CURRENT_YEAR}`
 
 // The homepage meta description
-export const DESCRIPTION: string = `Offre de ${AMOUNT_IN_EUROS}€ de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite avec Deliveroo Plus · Parrainage: ${AMOUNT_IN_EUROS}€ offerts.`
+export const DESCRIPTION: string = `Offre de ${AMOUNT_TO_EARN}${AMOUNT_UNIT} de promotion sur ${FOR_NUMBER_OF_COMMANDS > 1 ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes` : 'votre 1ère commande'} sur le site ${PRODUCT_NAME} · Livraison gratuite avec Deliveroo Plus · Parrainage: ${AMOUNT_TO_EARN}${AMOUNT_UNIT} offerts.`
 
 // Google Analytics ID
 export const GA_ID: string = 'G-ZQPYC60MX9'
@@ -77,8 +107,7 @@ export const FAQ: FaqProps['faq'] = [
         >
           {SPONSOR_LINK}
         </a>{' '}
-        — et créez votre compte. Les <b>{AMOUNT_IN_EUROS}€</b> seront appliqués
-        à{' '}
+        — et créez votre compte. Les <b>{AMOUNT_TO_EARN}€</b> seront appliqués à{' '}
         {FOR_NUMBER_OF_COMMANDS > 1
           ? `vos ${FOR_NUMBER_OF_COMMANDS} premières commandes`
           : 'votre première commande'}
@@ -91,7 +120,7 @@ export const FAQ: FaqProps['faq'] = [
     answer: (
       <>
         Le montant du code promotionnel disponible gratuitement est de{' '}
-        <b>{AMOUNT_IN_EUROS}€</b>.
+        <b>{AMOUNT_TO_EARN}€</b>.
       </>
     )
   },
