@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
-export const SPONSOR_LINK: string = 'https://www.labellevie.com/r/NDYxNDUx'
+export const SPONSOR_LINK: string = 'https://www.labellevie.com/r/NjQ0MDQ4'
 
 // Amount in euros users will earn for their first delivery
 export const AMOUNT_IN_EUROS: number = 10
