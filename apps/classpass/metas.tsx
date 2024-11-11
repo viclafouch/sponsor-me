@@ -79,7 +79,7 @@ export const DESCRIPTION: string = `Parrainage de ${AMOUNT_TO_EARN}${AMOUNT_UNIT
 `
 
 // Google Analytics ID, can be empty
-export const GA_ID: string = 'G-GJGLYTKB81'
+export const GA_ID: string = 'G-VC9SC2WKYC'
 
 // Theme color
 export const THEME_COLOR: string = '#0055ff'
