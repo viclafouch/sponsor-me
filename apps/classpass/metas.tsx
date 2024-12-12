@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
-export const SPONSOR_LINK: string = 'https://classpass.com/refer/P32LCQME25'
+export const SPONSOR_LINK: string = 'https://classpass.com/refer/PMEM9DEC30'
 
 // Amount in euros users will earn for their first delivery
 export const AMOUNT_TO_EARN: number = 20
