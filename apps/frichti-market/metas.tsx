@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import type { FaqProps } from '@repo/ui'
 
 // The sponsor link that users will use
-export const SPONSOR_LINK: string = 'https://www.frichtimarket.com/r/NjA1NjUy'
+export const SPONSOR_LINK: string = 'https://www.frichtimarket.com/r/NjU5NDAz'
 
 // Amount in euros users will earn for their first delivery
 export const AMOUNT_TO_EARN: number = 10

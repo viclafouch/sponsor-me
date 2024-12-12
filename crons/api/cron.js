@@ -63,6 +63,11 @@ const ACCOUNTS = [
     type: 'frichti'
   },
   {
+    cookie: process.env.FRICHTI_MARKET_COOKIE_AGATHE,
+    email: 'agathe.****@yahoo.fr',
+    type: 'frichti'
+  },
+  {
     cookie: process.env.FRICHTI_MARKET_COOKIE_VICTOR,
     email: 'victor.****@gmail.com',
     type: 'frichti'
@@ -80,6 +85,8 @@ const ACCOUNTS = [
 ]
 
 export default async function handler(request, response) {
+  console.log('Getting credits...')
+
   const accountsWithCredits = await Promise.all(
     ACCOUNTS.map(async (account) => {
       const credits = await getCreditsByWebsite[account.type](account.cookie)
@@ -90,6 +97,8 @@ export default async function handler(request, response) {
       }
     })
   )
+
+  console.log('Sending email...')
 
   await resend.emails.send({
     from: 'onboarding@resend.dev',
@@ -103,6 +112,8 @@ export default async function handler(request, response) {
       })
       .join('')}</p>`
   })
+
+  console.log('Email sent')
 
   // Vercel CLI
   if (response) {
