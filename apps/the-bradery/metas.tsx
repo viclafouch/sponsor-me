@@ -77,8 +77,7 @@ export const LOGO_URL: string = '/logo-the-bradery.png'
 export const SPONSOR_ME_LOGO_NAME: string = 'frichti-market-logo.png'
 
 // The CSS url of the main background (don't forget to update the file in public folder)
-export const MAIN_BACKGROUND_URL: string =
-  "url('https://thebradery.com/cdn/shop/files/03.Desktop_Horizontale_Cosmo_1_2000x.png?v=1732874342')"
+export const MAIN_BACKGROUND_URL: string = "url('/main-background.webp')"
 
 // The homepage meta title
 export const TITLE: string = `Code promo de ${AMOUNT_TO_EARN}${AMOUNT_UNIT} offert sur ${PRODUCT_NAME} en ${CURRENT_FORMATTED_DATE}`
