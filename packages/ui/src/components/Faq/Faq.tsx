@@ -34,9 +34,9 @@ const Faq = ({ faq }: FaqProps) => {
               itemProp="acceptedAnswer"
               itemType="https://schema.org/Answer"
             >
-              <p className="ui-mt-1" itemProp="text">
+              <div className="ui-mt-1" itemProp="text">
                 {answer}
-              </p>
+              </div>
             </div>
           </div>
         )
