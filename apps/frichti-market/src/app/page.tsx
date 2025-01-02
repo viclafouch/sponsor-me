@@ -8,6 +8,10 @@ const Home = () => {
   return (
     <>
       {METAS.GA_ID ? <GoogleAnalytics gaId={METAS.GA_ID} /> : null}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(METAS.JSON_LD) }}
+      />
       <div
         style={{ backgroundImage: METAS.MAIN_BACKGROUND_URL }}
         className="min-h-dvh flex flex-col justify-center items-center bg-main flex-1 bg-cover bg-no-repeat bg-center"

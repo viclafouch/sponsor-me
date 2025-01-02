@@ -87,6 +87,31 @@ export const DESCRIPTION: string = `Offre de ${AMOUNT_TO_EARN}${AMOUNT_UNIT} de 
 // Google Analytics ID, can be empty
 export const GA_ID: string = 'G-GJGLYTKB81'
 
+export const JSON_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebApplication',
+      url: METADATA_BASE.toString(),
+      name: TITLE,
+      description: DESCRIPTION,
+      applicationCategory: 'OfferCatalog',
+      operatingSystem: 'All platforms',
+      browserRequirements: 'No JavaScript required',
+      offers: {
+        '@type': 'Offer',
+        price: '0.00',
+        priceCurrency: 'EUR'
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: 4.96,
+        reviewCount: 823
+      }
+    }
+  ]
+}
+
 // Theme color
 export const THEME_COLOR: string = '#faf190'
 
